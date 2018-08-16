@@ -84,23 +84,6 @@
                          array_push($error_msg, "Last name must contain letters only.");
                     }
 
-                 //validation for email
-                if(empty($email)){
-                    array_push($error_msg, "Email is empty.");
-                 }else
-                    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                        array_push($error_msg, "Invalid email.");
-                    }else  //check if email is already existing
-                        {
-                        $data_query = "SELECT email FROM user_tbl WHERE email='$email'";
-                        $data = mysqli_query($db_conn, $data_query);
-                        $check_result = mysqli_num_rows($data);
-                            //if email is already used
-                            if($check_result > 0){
-                                array_push($error_msg, "Email is already existing.");
-                                }
-                         }
-
                 //validation for username
                 if(empty($username)){
                     array_push($error_msg, "Username is empty.");
@@ -117,6 +100,23 @@
                             }
                     }
         
+            //validation for email
+                if(empty($email)){
+                    array_push($error_msg, "Email is empty.");
+                 }else
+                    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                        array_push($error_msg, "Invalid email.");
+                    }else  //check if email is already existing
+                        {
+                        $data_query = "SELECT email FROM user_tbl WHERE email='$email'";
+                        $data = mysqli_query($db_conn, $data_query);
+                        $check_result = mysqli_num_rows($data);
+                            //if email is already used
+                            if($check_result > 0){
+                                array_push($error_msg, "Email is already existing.");
+                                }
+                         }
+           
                 //validation for password
                  if(empty($password)){
                      array_push($error_msg, "Password is empty.");

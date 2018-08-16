@@ -1,0 +1,155 @@
+body{
+    color: 	#606060;
+}
+#bg-image{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.5;
+}
+form{
+	margin: 0;
+	margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+	width: 550px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 15px;
+    position: relative;
+    box-shadow: -2px -2px 35px #dddddd, 2px 2px 35px #dddddd;
+    border-radius: 10px;
+}
+.col{
+    margin: auto;
+}
+.row{
+    margin: 0;
+    margin-bottom: 5px;
+    display: block;
+}
+.click-link{
+    font-style:normal;
+    margin: 1%;
+}
+h1{
+    font-size: 1.5em;
+	background-color: #606060;
+    color: #ffffff;
+	margin: auto;
+	text-align:center;
+	padding:2%;
+	width: 100%;
+}
+input[type=text], input[type=password]{
+    margin:auto;
+    margin-top: auto;
+    padding: 10px;
+	border:none;
+	width:100%;
+    border-bottom: 1px solid #606060;
+    color: 	#888888;
+    justify-content: center;
+    position: relative;
+    display: block;
+}
+label{
+    margin: auto;
+    margin-top: 1.5%;
+    text-align: left;
+    color: #313131;
+    font-size: 100%;
+    font-weight: bold;
+}
+.alert{
+    background-color: #dddddd;
+    margin: auto;
+    color: 	#606060;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #888888;
+    padding: 15px;
+}
+.btn{
+	margin-top:0.5em;
+	width:50%;
+	border-radius:25px;
+    margin-left: 25%;
+    font-size: 12pt;
+    padding: 10px;
+    background-color: #cecece;
+}
+.btn:hover{
+	background-color: 	#888888;
+    color: 	#dddddd;
+	margin-top:0.5em;
+	width:50%;
+	border-radius:25px;
+    opacity: 0.7;
+    margin-left: 25%;
+    font-size: 12pt;
+    padding: 10px;
+}
+
+/*------- user home page -------*/
+#home-page{
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position:relative;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: -2px -2px 35px #dddddd, 2px 2px 35px #dddddd;
+    border-radius: 10px;
+}
+#home-h1{
+    margin: auto;
+    padding: 25px;
+    font-size: auto;
+    width: auto;
+    height: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.home-content{
+    margin: auto;
+    width: auto;
+    text-align: center;
+    font-size: 20pt;
+    position: static;
+}
+.home-btn{
+    position: static;
+    float: right;
+    margin: auto;
+	width: 100px;
+    height: auto;
+	border-radius:5px;
+    font-size: 12pt;
+    padding: 10px;
+    background-color: #cecece;
+}
+.home-btn:hover{
+    position: static;
+    float: right;
+    margin: auto;
+    background-color: #888888;
+    color: 	#dddddd;
+	width:100px;
+	border-radius:5px;
+    font-size: 12pt;
+    padding: 10px;
+}
+.table{
+    text-align:left;
+    margin: auto;
+    width: 50%;
+}
+.label{
+    text-align: right;
+}

@@ -74,7 +74,6 @@
                 }else
                     if(!preg_match("/^[a-zA-Z\s]+$/", $firstname)){
                         array_push($error_msg, "First name must contain letters only.");
-                        echo $firstname;
                     }
 
                  //last name validation
